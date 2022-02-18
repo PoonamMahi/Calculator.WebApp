@@ -13,7 +13,7 @@ namespace Calculator.Library
             }
             catch (Exception ex)
             {
-                Console.WriteLine("{0} Exception caught.", ex.Message);
+                throw ex;
             }
             return -1;
            
@@ -27,9 +27,9 @@ namespace Calculator.Library
             }
             catch (Exception ex)
             {
-                Console.WriteLine("{0} Exception caught.", ex.Message);
+                throw ex;
             }
-            return 0;
+            return -1;
         }
         //Multiplication Task
         public int Multiplication(int x,int y)
@@ -40,9 +40,9 @@ namespace Calculator.Library
             }
             catch (Exception ex)
             {
-                Console.WriteLine("{0} Exception caught.", ex.Message);
+                throw ex;
             }
-            return 0;
+            return -1;
 
         }
         //Division Task
@@ -54,9 +54,9 @@ namespace Calculator.Library
             }
             catch (Exception ex)
             {
-                Console.WriteLine("{0} Exception caught.", ex.Message);
+                throw ex;
             }
-            return 0;
+            return -1;
         }
     }
 }
