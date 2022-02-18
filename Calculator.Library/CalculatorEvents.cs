@@ -13,10 +13,9 @@ namespace Calculator.Library
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(ex.Message);
             }
-            return -1;
-           
+
         }
         //Subtraction Task
         public int Subtraction(int x,int y)
@@ -27,9 +26,8 @@ namespace Calculator.Library
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(ex.Message);
             }
-            return -1;
         }
         //Multiplication Task
         public int Multiplication(int x,int y)
@@ -40,9 +38,8 @@ namespace Calculator.Library
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(ex.Message);
             }
-            return -1;
 
         }
         //Division Task
@@ -54,9 +51,8 @@ namespace Calculator.Library
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(ex.Message);
             }
-            return -1;
         }
     }
 }

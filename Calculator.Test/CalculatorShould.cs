@@ -80,7 +80,7 @@ namespace Calculator.Test
         [TestCase(0,0)]
         public void Division_Task_Should_Throw_Exception(int x,int y)
         {
-            var result =Assert.Throws<DivideByZeroException>(() => _calculatorEvents.Division(x, y));
+            var result =Assert.Throws<Exception>(() => _calculatorEvents.Division(x, y));
             Assert.That(result.Message, Is.EqualTo("Attempted to divide by zero."));
         }
 
