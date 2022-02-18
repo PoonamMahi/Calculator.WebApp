@@ -7,22 +7,56 @@ namespace Calculator.Library
         //Addition Task
         public int Addition(int x,int y)
         {
-            return x + y; //returns added result
+            try
+            { 
+                return x + y;  //returns added result
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("{0} Exception caught.", ex.Message);
+            }
+            return -1;
+           
         }
         //Subtraction Task
         public int Subtraction(int x,int y)
         {
-            return x - y; //returns subtracted result            
+            try
+            { 
+                return x - y; //returns subtracted result
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("{0} Exception caught.", ex.Message);
+            }
+            return 0;
         }
         //Multiplication Task
         public int Multiplication(int x,int y)
         {
-            return x * y; //returns multiplication result 
+            try
+            {
+                return x * y; //returns multiplication result 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("{0} Exception caught.", ex.Message);
+            }
+            return 0;
+
         }
         //Division Task
         public int Division(int x,int y)
         {
-            return x / y; //returns division result
+            try
+            {
+                return x / y; //returns Division result 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("{0} Exception caught.", ex.Message);
+            }
+            return 0;
         }
     }
 }
